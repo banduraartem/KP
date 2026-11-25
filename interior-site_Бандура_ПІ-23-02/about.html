@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Design — About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="icon" href="image/logo.jpg" type="image/jpeg">
+  <style>
+    .nav-bar-inner {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+    }
+    .desktop-nav {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      gap: 24px !important;
+    }
+    .desktop-nav .dropdown {
+      position: relative !important;
+      display: inline-flex !important;
+      align-items: center !important;
+    }
+    .desktop-nav .dropdown-menu {
+      position: absolute !important;
+      top: 100% !important;
+      left: 0 !important;
+      display: none !important;
+      flex-direction: column !important;
+      min-width: 210px !important;
+      background: #181b22 !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      border-radius: 8px !important;
+      padding: 8px 0 !important;
+      z-index: 950 !important;
+    }
+    .desktop-nav .dropdown:hover .dropdown-menu,
+    .desktop-nav .dropdown.open .dropdown-menu {
+      display: flex !important;
+    }
+  </style>
+</head>
+<body data-page="about">
+
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="contact-info">
+          <a href="tel:+9530123654896">+953 012 3654 896</a>
+          <a href="mailto:support@colorlib.com">support@colorlib.com</a>
+        </div>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener">Fb</a>
+          <a href="https://x.com" target="_blank" rel="noopener">Tw</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener">Dr</a>
+          <a href="https://behance.net" target="_blank" rel="noopener">Be</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-bar">
+      <div class="container nav-bar-inner">
+        <a href="index.html" class="logo">
+          <img src="image/logo.jpg" alt="Interior Logo">
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active-link">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <div class="dropdown">
+            <button type="button" class="dropdown-toggle">Blog ▾</button>
+            <div class="dropdown-menu">
+              <a href="index.html#exhibitions">Exhibitions</a>
+              <a href="projects.html">Case Studies</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button type="button" class="dropdown-toggle">Pages ▾</button>
+            <div class="dropdown-menu">
+              <a href="about.html">About Us</a>
+              <a href="services.html">Our Services</a>
+              <a href="contact.html">Contact</a>
+              <a href="404.html">404 Page</a>
+            </div>
+          </div>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switcher">
+            <button type="button" class="lang-btn active" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="ua">UA</button>
+          </div>
+          <button type="button" class="mobile-menu-toggle mobile-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner" style="background-image: url('image/hero.jpg');">
+    <div class="container">
+      <h1 class="page-banner-title">About</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>→</span>
+        <span>About</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Who are in extremely love with eco friendly system.</span>
+        <h2 class="section-title">Some Features that Made us Unique</h2>
+      </div>
+      <div class="grid-3" id="about-features-grid"></div>
+    </div>
+  </section>
+
+  <section class="section section-light testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Who are in extremely love with eco friendly system.</span>
+        <h2 class="section-title">Testimonial from our Clients</h2>
+      </div>
+      <div class="grid-2" id="about-testimonials-grid"></div>
+    </div>
+  </section>
+
+  <section class="cta-section" style="background-image: url('image/studio.jpg');">
+    <div class="container cta-box">
+      <h2 class="cta-title">Looking for a<br>quality and affordable interior design?</h2>
+      <p class="cta-text">inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards especially in the workplace.</p>
+      <a href="contact.html" class="btn btn-primary">Request Quote Now</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-widget">
+          <a href="index.html" class="logo">
+            <img src="image/logo.jpg" alt="Interior Logo">
+          </a>
+          <h4 class="widget-title">About Us</h4>
+          <p class="widget-text">If you own an Iphone, you've probably already worked out how much fun it is to use it to watch movies-it has that.</p>
+        </div>
+
+        <div class="footer-widget">
+          <h4 class="widget-title">Newsletter</h4>
+          <p class="widget-text">Stay update with our latest</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email Address" required>
+            <button type="submit" class="btn btn-primary">OK</button>
+          </form>
+        </div>
+
+        <div class="footer-widget">
+          <h4 class="widget-title">Follow Us</h4>
+          <p class="widget-text">Let us be social</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener">Fb</a>
+            <a href="https://x.com" target="_blank" rel="noopener">Tw</a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener">Dr</a>
+            <a href="https://behance.net" target="_blank" rel="noopener">Be</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="copyright">Copyright ©2026 All rights reserved | This template is made with ♡ by <span class="text-gold">Colorlib</span> and distributed by <span class="text-gold">ThemeWagon</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
